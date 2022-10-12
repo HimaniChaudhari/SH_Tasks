@@ -1,0 +1,97 @@
+-> I need to build an application where I will provide some input values and based on the criteria stored in DB, you need to return records which will satisfy the criteria with the input values.
+
+
+input parameter -> Application -> process the input parameter and validate the criteria -> provide the matched result
+
+
+Application-> connect to DB
+
+DB:
+	id, name, criteria, salary, dob
+	1, Mahesh, , 10k, 12/12/2012
+	
+
+{
+	"id": "1",
+	"rules":[
+		{
+			"fieldName": "age",
+			"field_type": "numeric",
+			"condition": {
+				"type": "validation",
+				"operator": "gt",
+				"value": "21"
+			}
+		},
+		{
+			"fieldName": "rank",
+			"field_type": "numeric",
+			"condition": {
+				"type": "validation",
+				"operator": "eq",
+				"value": "3"
+			}
+		}
+	]
+}
+
+
+{
+	"id": "2",
+	"rules":[
+		{
+			"field_name": "age",
+			"field_type": "numeric",
+			"condition": {
+				"type": "validation",
+				"operator": "gt",
+				"value": "30"
+			}
+		},
+		{
+			"field_name": "rank",
+			"field_type": "numeric",
+			"condition": {
+				"type": "validation",
+				"operator": "gteq",
+				"value": "5"
+			}
+		}
+	]
+}
+
+{
+	"id": "3",
+	"rules":[
+		{
+			"field_name": "state",
+			"field_type": "string",
+			"condition": {
+				"type": "validation",
+				"operator": "eq",
+				"value": "Maharashtra"
+			}
+		},
+		{
+			"field_name": "city",
+			"field_type": "string",
+			"condition": {
+				"type": "validation",
+				"operator": "eq",
+				"value": "Pune"
+			}
+		},
+		{
+			"field_name": "age",
+			"field_type": "numeric",
+			"condition": {
+				"type": "validation",
+				"operator": "lt",
+				"value": "30"
+			}
+		}
+	]
+}
+
+
+age 22, rank = 4
