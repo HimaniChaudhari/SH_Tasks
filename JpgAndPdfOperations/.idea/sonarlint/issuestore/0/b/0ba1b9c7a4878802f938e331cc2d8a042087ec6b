@@ -1,0 +1,11 @@
+
+’
+java:S1130
+"|Remove the declaration of thrown exception 'com.itextpdf.text.DocumentException', as it cannot be thrown from method's body.(Ã­Ë±
+‚
+java:S1130
+"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ã­Ë±
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚ÞÏ¥ýÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÝÊÎ€ýÿÿÿÿ
+[
+java:S1128"ERemove this unused import 'org.example.utils.JpgOperationsPerformed'.(Ž‹¥ô

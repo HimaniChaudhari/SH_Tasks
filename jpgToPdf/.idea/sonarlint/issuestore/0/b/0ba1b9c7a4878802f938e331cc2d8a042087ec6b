@@ -1,0 +1,7 @@
+
+Z
+java:S2095"DUse try-with-resources or close this "Stream" in a "finally" clause.(±Ÿ•ý
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚ÞÏ¥ýÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ŽŒõáýÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ªõÁ¯ûÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(Îã­Ã
